@@ -91,3 +91,17 @@ header img {
   margin-top: 79%;
   margin-left: 10%;
 }
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+
+  .container {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+
+  header {
+    margin-top: 3%;
+    max-width: fit-content;
+  }  
+
+}
