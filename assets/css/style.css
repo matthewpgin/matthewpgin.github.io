@@ -24,14 +24,13 @@ header {
 header img {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: flex;
 }
 
 .custom-image {
   width: 200px;
   height: auto;
   border-radius: 1000px;
-  display: block;
   object-fit: cover;
   display: flex;
   justify-content: left;
@@ -104,4 +103,13 @@ header img {
     max-width: fit-content;
   }  
 
+  .custom-image {
+    width: 200px;
+    height: auto;
+    border-radius: 1000px;
+    object-fit: cover;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
 }
