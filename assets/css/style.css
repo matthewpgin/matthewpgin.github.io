@@ -229,8 +229,6 @@ header img {
   .main-box {
     display: flex;
     justify-content: space-around;
-    margin-left: -5%;
-    margin-right: -5%;
     height: 100%;
   }
 
@@ -241,6 +239,15 @@ header img {
     height: 200px;
     top: 10px;
     padding-left: 10%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    margin-left: 7%;
+    margin-right: 7%;
   }
 
 }
