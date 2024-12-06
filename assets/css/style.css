@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .profile_pic {
     width: 80px;
     height: 80px;
@@ -20,6 +24,7 @@ section {
   display: flex;
   justify-content: space-around;
   margin-left: -5%;
+  height: 100%;
 }
 
 .main-box-1 {
@@ -31,11 +36,25 @@ section {
   display: flex;
   /* border: 5px solid red; */
   justify-content: center;
+  position: sticky;
+  height: 200px;
+  top: 10px;
 }
 
 .page-nav {
-  margin-left: 10%;
+  margin-left: 36%;
   /* border: 5px solid red; */
+}
+
+.main-box-2 p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.main-box-2 p a:hover {
+  color: darkblue;
 }
 
 
