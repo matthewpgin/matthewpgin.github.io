@@ -25,12 +25,10 @@ section {
   justify-content: space-around;
   margin-left: -5%;
   height: 100%;
-  border: 1px solid red;
 }
 
 .main-box-1 {
   width: 500px;
-  border: 1px solid red;
 }
 
 .main-box-2 {
@@ -40,7 +38,6 @@ section {
   position: sticky;
   height: 200px;
   top: 10px;
-  border: 1px solid red;
 }
 
 .page-nav {
@@ -233,20 +230,18 @@ header img {
     display: flex;
     justify-content: space-around;
     margin-left: -5%;
-    margin-right: -30%;
+    margin-right: -5%;
     height: 100%;
-    border: 1px solid red;
   }
 
   .main-box-2 {
-    width: 300px;
+    width: 160px;
     /* border: 5px solid red; */
-    justify-content: center;
+    justify-content: right;
+    align-items: right;
     position: sticky;
     height: 200px;
     top: 10px;
-    border: 1px solid red;
-    padding-right: 5%;
   }
 
 }
