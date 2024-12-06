@@ -235,13 +235,12 @@ header img {
   }
 
   .main-box-2 {
-    width: 160px;
+    width: 190px;
     /* border: 5px solid red; */
-    justify-content: right;
-    align-items: right;
     position: sticky;
     height: 200px;
     top: 10px;
+    padding-left: 10%;
   }
 
 }
