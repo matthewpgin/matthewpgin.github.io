@@ -25,24 +25,26 @@ section {
   justify-content: space-around;
   margin-left: -5%;
   height: 100%;
+  border: 1px solid red;
 }
 
 .main-box-1 {
   width: 500px;
+  border: 1px solid red;
 }
 
 .main-box-2 {
   width: 300px;
-  display: flex;
   /* border: 5px solid red; */
   justify-content: center;
   position: sticky;
   height: 200px;
   top: 10px;
+  border: 1px solid red;
 }
 
 .page-nav {
-  margin-left: 36%;
+  /* margin-left: 35%;
   /* border: 5px solid red; */
 }
 
@@ -225,6 +227,26 @@ header img {
   .body-container {
     width: 1000px;
     margin: auto;
+  }
+
+  .main-box {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -5%;
+    margin-right: -30%;
+    height: 100%;
+    border: 1px solid red;
+  }
+
+  .main-box-2 {
+    width: 300px;
+    /* border: 5px solid red; */
+    justify-content: center;
+    position: sticky;
+    height: 200px;
+    top: 10px;
+    border: 1px solid red;
+    padding-right: 5%;
   }
 
 }
