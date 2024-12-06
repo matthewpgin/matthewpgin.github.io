@@ -12,8 +12,8 @@ section {
   flex-direction: column;
   align-items: left;
   justify-content: space-around;
-  margin-left: 14.8%;
-  margin-right: 14.8%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .main-box {
@@ -29,10 +29,13 @@ section {
 .main-box-2 {
   width: 300px;
   display: flex;
+  /* border: 5px solid red; */
+  justify-content: center;
 }
 
-.main-box-2 > p {
-  padding-left: 20%;
+.page-nav {
+  margin-left: 10%;
+  /* border: 5px solid red; */
 }
 
 
