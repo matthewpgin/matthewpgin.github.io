@@ -3,38 +3,78 @@
     height: 80px;
 }
 
+section {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+  margin-left: 14.8%;
+  margin-right: 14.8%;
+}
+
+.main-box {
+  display: flex;
+  justify-content: space-around;
+  margin-left: -5%;
+}
+
+.main-box-1 {
+  width: 500px;
+}
+
+.main-box-2 {
+  width: 300px;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    background-color: #f9fbf2;
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1%, transparent 1%), 
-                      radial-gradient(circle, rgba(255, 255, 255, 0.1) 1%, transparent 1%);
-    background-size: 2px 2px, 2px 2px;
-    background-position: 0 0, 1.5px 1.5px;
-  }
+  font-family: Garamond, serif;
+  display: flex;
+  background-color: #f9fbf2;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1%, transparent 1%), 
+                    radial-gradient(circle, rgba(255, 255, 255, 0.1) 1%, transparent 1%);
+  background-size: 2px 2px, 2px 2px;
+  background-position: 0 0, 1.5px 1.5px;
+  flex-direction: column;
+}
 
 h1 {
   font-family: Garamond, serif;
 }
   
 header {
-  margin-top: 3%;
+  width: fit-content;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 5%;
+  align-items: left;
 }
 
 header img {
   max-width: 100%;
   height: auto;
-  display: flex;
 }
 
 .custom-image {
   width: 200px;
   height: auto;
   border-radius: 1000px;
-  object-fit: cover;
   display: flex;
-  justify-content: left;
   align-items: left;
+}
+
+.poem {
+  margin-top: 5%;
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: left;
+  gap: 330px;
 }
 
 .crop img {
@@ -45,8 +85,7 @@ header img {
 
 .body-container {
   width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: auto;
 }
 
 /* social links and icons  */
@@ -82,8 +121,6 @@ header img {
   display: block; /* Ensure it behaves like a block element */
   object-fit: cover;
   display: flex;
-  justify-content: left;
-  align-items: left;
 }
 
 .lower {
@@ -94,22 +131,73 @@ header img {
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
 
+  section {
+    display: flex;
+  }
+
   .container {
     padding: 10px; /* Add padding for smaller screens */
   }
 
   header {
-    margin-top: 3%;
-    max-width: fit-content;
-  }  
+    width: fit-content;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+    align-items: left;
+  }
 
   .custom-image {
     width: 200px;
     height: auto;
-    border-radius: 1000px;
+    border-radius: auto;
     object-fit: cover;
-    display: flex;
+    display: block;
     justify-content: left;
     align-items: left;
   }
+
+  .icon-links {
+    display: flex;
+    justify-content: center, flex-end;
+    gap: 15px;
+  }
+  
+  .icon-links a {
+    font-size: 30px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icon-links a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+  }
+  
+  .icon {
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    display: flex; /* Ensures the image behaves like a block element */
+    object-fit: contain; /* Ensures the image scales nicely */
+  }
+  
+  .custom-image {
+    width: 200px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 1000px; /* Rounded corners */
+    display: flex; /* Ensure it behaves like a block element */
+    display: flex;
+  }
+  
+  .lower {
+    margin-top: 79%;
+    margin-left: 10%;
+  }
+
+  .body-container {
+    width: 1000px;
+    margin: auto;
+  }
+
 }
+
