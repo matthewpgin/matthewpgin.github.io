@@ -28,7 +28,13 @@ section {
 
 .main-box-2 {
   width: 300px;
+  display: flex;
 }
+
+.main-box-2 > p {
+  padding-left: 20%;
+}
+
 
 body {
   font-family: Garamond, serif;
