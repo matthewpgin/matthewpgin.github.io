@@ -71,6 +71,18 @@ body {
 h1 {
   font-family: Garamond, serif;
 }
+
+/* Remove underline and highlight when link is clicked */
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
   
 header {
   width: fit-content;
@@ -153,6 +165,12 @@ header img {
 .lower {
   margin-top: 79%;
   margin-left: 10%;
+}
+
+/* Styles for PDF embedding */
+.embed-container {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
 }
 
 /* Adjust for smaller screens */
@@ -260,5 +278,8 @@ header img {
     margin-right: 1%;
   }
 
-}
+  .embed-container {
+    height: 80vh; /* Adjust height for smaller screens */
+  }
 
+}
