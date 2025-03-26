@@ -1,0 +1,184 @@
+/* Main layout for positioning the navigation on the right */
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* Navigation styles */
+  .main-box-2 {
+    width: 200px;
+    padding: 2rem 0 2rem 2rem;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+    align-self: flex-start;
+  }
+  
+  /* Exhibition Blog Post Styles */
+  .blog-post {
+    flex: 1;
+    max-width: 800px;
+    padding: 2rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .blog-post h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    text-align: center;
+  }
+  
+  .blog-post h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2a2a2a;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0.5rem;
+  }
+  
+  .blog-post h3 {
+    font-size: 1.4rem;
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: #3a3a3a;
+  }
+  
+  .blog-post h4 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+    color: #4a4a4a;
+  }
+  
+  .blog-post p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+  }
+  
+  .blog-post ul, .blog-post ol {
+    margin-bottom: 1.2rem;
+    padding-left: 2rem;
+  }
+  
+  .blog-post li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-post blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .blog-post blockquote footer {
+    font-style: normal;
+    text-align: right;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .exhibition-item {
+    background-color: #dde7ec;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .playlist-examples {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  .playlist-examples caption {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  .playlist-examples th, .playlist-examples td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: center;
+  }
+  
+  .playlist-examples th {
+    background-color: #f2f2f2;
+  }
+  
+  .playlist-examples tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .summary, .context, .exhibition-intro, .object-list, 
+  .exhibition-design, .conclusion, .visitor-experience, 
+  .accessibility, .about-author, .works-cited {
+    margin-bottom: 2.5rem;
+  }
+  
+  .bibliography {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .bibliography li {
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    text-indent: -2rem;
+    line-height: 1.4;
+  }
+  
+  .bibliography a {
+    color: #0066cc;
+    text-decoration: none;
+    word-break: break-word;
+  }
+  
+  .bibliography a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .main {
+      flex-direction: column;
+    }
+    
+    .main-box-2 {
+      width: 100%;
+      padding: 1rem;
+      position: static;
+      margin-bottom: 1rem;
+    }
+    
+    .blog-post {
+      padding: 1rem;
+      max-width: 100%;
+    }
+    
+    .blog-post h1 {
+      font-size: 2rem;
+    }
+    
+    .blog-post h2 {
+      font-size: 1.5rem;
+    }
+    
+    .blog-post h3 {
+      font-size: 1.2rem;
+    }
+    
+    .blog-post h4 {
+      font-size: 1.1rem;
+    }
+  }
