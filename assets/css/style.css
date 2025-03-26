@@ -76,6 +76,7 @@ h1 {
 a {
   text-decoration: none;
   outline: none;
+  color: darkblue;
 }
 
 a:focus, a:active {
